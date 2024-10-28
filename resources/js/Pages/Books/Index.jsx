@@ -361,13 +361,13 @@ export default function Dashboard({ auth, message, booksPaginator }) {
 
                                         <td className='border border-gray-400 px-2 py-2 text-center'>
                                             <GreenButton onClick={() => confirmBookUpdate(book.id, book.title, book.content, book.category, book.price)}>
-                                                編集_(:3 」∠)_
+                                                編集
                                             </GreenButton>
                                         </td>
                                         <td className='border border-gray-400 px-2 py-2 text-center'>
                                             {/* 追加 */}
                                             <DangerButton onClick={() => confirmBookDelete(book.id, book.title)}>
-                                                削除(´・ω・｀)
+                                                削除
                                             </DangerButton>
                                         </td>
                                     </tr>
