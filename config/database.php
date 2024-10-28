@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,10 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
-            'sslmode' => 'require',
+            // 'options' => [
+            //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            //     'options' => env('DB_OPTIONS', [])
+            // ],
         ],
 
         'sqlsrv' => [
